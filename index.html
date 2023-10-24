@@ -26,6 +26,32 @@
                 <div class="image">
                     <img src="img/hero.jpg" alt="">
                 </div>
+
+
+                <p>This page was viewed</p> <h1 id="count">8</h1>
+
+<p>times</p>
+
+<script>
+
+const countEl = document.getElementById("count");
+
+countvisits();
+
+function countvisits() {
+
+fetch('https://api.countapi.xyz/update/laptop/mouse/?amount=1")
+
+.then((res) => res.json())
+
+.then((res) => {
+
+countEl.innerHTML = res.value;
+
+}
+
+      </script>
+                
             </div>
             <div class="right-header">
                 <h1 class="name">
